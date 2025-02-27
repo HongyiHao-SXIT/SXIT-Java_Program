@@ -1,6 +1,5 @@
 package Project_15;
 
-// 电话卡类（PhoneCard）
 class PhoneCards {
     private String phoneNumber;
     protected double balance;
@@ -30,7 +29,6 @@ class PhoneCards {
     }
 }
 
-// 主类
 public class PhoneCard {
     public static void main(String[] args) {
         // 使用电话卡类
