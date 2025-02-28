@@ -1,5 +1,4 @@
 package Project_15;
-
 class PhoneCards {
     private String phoneNumber;
     protected double balance;
@@ -31,8 +30,8 @@ class PhoneCards {
 
 public class PhoneCard {
     public static void main(String[] args) {
-        // 使用电话卡类
-        PhoneCard card = new PhoneCards("1234567890");
+
+        PhoneCards card = new PhoneCards("1234567890");
         card.addBalance(20.0);
         card.makeCall(30);
 
