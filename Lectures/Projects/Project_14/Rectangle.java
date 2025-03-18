@@ -1,33 +1,47 @@
 package Project_14;
+
 public class Rectangle extends Shape {
-    private double length, width;      
-    public Rectangle(){
-        this(0.0,0.0);
+    private double length, width;
+
+    public Rectangle() {
+        this(0.0, 0.0);
     }
-    public Rectangle(double length,double width){
-        super("矩形");
+
+    public Rectangle(double length, double width) {
+        super("Rectangle");
         this.length = length;
         this.width = width;
     }
-    public void setLenght(double length){
+
+    public void setLength(double length) { 
         this.length = length;
     }
+
     @Override
-    public double getlenght(){
+    public double getLength() { 
         return length;
     }
-    
+
+    public double getWidth() {
+        return width;
+    }
+
+    public void setWidth(double width) { 
+        this.width = width;
+    }
+
     @Override
-    public double getPerimeter(){
+    public double getPerimeter() {
         return 2 * (length + width);
     }
+
     @Override
-    public double getArea(){
+    public double getArea() {
         return length * width;
     }
+
     @Override
-    public String toString(){
-        return "[矩形] length and width = " + length + width;
+    public String toString() {
+        return "[Rectangle] length = " + length + ", width = " + width; 
     }
-    
 }

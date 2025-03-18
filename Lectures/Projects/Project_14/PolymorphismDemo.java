@@ -1,28 +1,27 @@
 package Project_14;
+
 public class PolymorphismDemo {
-    public static double sumArea(Shape[] shapes){
-        var sumArea = 0.0;
-        for(var shape: shapes){
+    public static double sumArea(Shape[] shapes) {
+        double sumArea = 0.0;
+        for (Shape shape : shapes) {
             System.out.println(shape.getArea());
             sumArea = sumArea + shape.getArea();
         }
         return sumArea;
-    } 
+    }
 
-    public static void main(String [] args){
-        var d = 0.0;
-        var shapes = new Shape[5];
-        for(var i = 0; i< shapes.length; i++){
+    public static void main(String[] args) {
+        double d;
+        Shape[] shapes = new Shape[5];
+        for (int i = 0; i < shapes.length; i++) {
             d = Math.random();
-            if(d>0.5){
+            if (d > 0.5) {
                 shapes[i] = new Circle(1);
-            }
-            else {
-                shapes[i] = new Rectangle(1,2);
+            } else {
+                shapes[i] = new Rectangle(1, 2);
             }
         }
-        var sumArea = sumArea(shapes);
-        System.out.printf("形状的面积是 = %.2f",sumArea);
+        double totalArea = sumArea(shapes);
+        System.out.printf("The total area of the shapes is = %.2f", totalArea);
     }
-}
-
+}    
