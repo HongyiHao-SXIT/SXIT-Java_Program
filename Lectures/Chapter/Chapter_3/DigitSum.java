@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class DigitSum {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("请输入一个整数: ");
+        System.out.print("Please enter an integer: ");
         if (scanner.hasNextInt()) {
             int num = scanner.nextInt();
             num = Math.abs(num);
@@ -14,9 +14,9 @@ public class DigitSum {
                 digitSum += num % 10;
                 num /= 10;
             }
-            System.out.println("该数的各位数字之和是: " + digitSum);
+            System.out.println("The sum of the digits of the number is: " + digitSum);
         } else {
-            System.out.println("输入无效，请输入一个有效的整数。");
+            System.out.println("Invalid input. Please enter a valid integer.");
         }
         scanner.close();
     }
