@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Mathutils {
     public static boolean isPrime(int n) {
         for (var divisor = 2; divisor * divisor <= n; divisor++) {
